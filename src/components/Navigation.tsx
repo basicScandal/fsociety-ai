@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Brain, Command, GitFork, Database, Shield, Terminal, Layers } from 'lucide-react';
+import { Brain, Command, GitFork, Database, Shield, Terminal, Layers, Zap } from 'lucide-react';
 import { TestEnvironment } from '../types';
 
 const environments: TestEnvironment[] = [
+  {
+    id: 'excessive-agency',
+    name: 'Excessive Agency',
+    description: 'Test unauthorized actions and data exfiltration',
+    icon: Zap.name
+  },
   {
     id: 'social-engineering',
     name: 'Social Engineering',
@@ -50,6 +56,7 @@ const environments: TestEnvironment[] = [
 
 const iconMap = {
   [Brain.name]: Brain,
+  [Zap.name]: Zap,
   [Command.name]: Command,
   [GitFork.name]: GitFork,
   [Database.name]: Database,

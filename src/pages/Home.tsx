@@ -1,9 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Brain, Command, GitFork, Database, Shield, Terminal, Layers } from 'lucide-react';
+import { Brain, Command, GitFork, Database, Shield, Terminal, Layers, Zap } from 'lucide-react';
 import { PixelBorder } from '../components/ui/PixelBorder';
 
 const features = [
+  {
+    icon: Zap,
+    title: 'Excessive Agency',
+    description: 'Test unauthorized actions and data exfiltration.',
+    path: '/test/excessive-agency',
+    examples: [
+      'Unauthorized data exfiltration',
+      'Excessive function invocation',
+      'Extension/plugin abuse',
+      'Autonomous decision manipulation'
+    ]
+  },
   {
     icon: Brain,
     title: 'Social Engineering',

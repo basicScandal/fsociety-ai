@@ -8,6 +8,7 @@ import { CommandInjection } from './pages/CommandInjection';
 import { ChainOfThoughtBypass } from './pages/ChainOfThoughtBypass';
 import { DataExfiltration } from './pages/DataExfiltration';
 import { ObfuscatedPayloads } from './pages/ObfuscatedPayloads';
+import { ExcessiveAgency } from './pages/ExcessiveAgency';
 import { ScriptEmbedded } from './pages/ScriptEmbedded';
 import { NestedPayloads } from './pages/NestedPayloads';
 import { CodeRain } from './components/ui/CodeRain';
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/test/chain-of-thought" element={<ChainOfThoughtBypass />} />
                 <Route path="/test/data-exfiltration" element={<DataExfiltration />} />
                 <Route path="/test/obfuscated-payloads" element={<ObfuscatedPayloads />} />
+                <Route path="/test/excessive-agency" element={<ExcessiveAgency />} />
                 <Route path="/test/script-embedded" element={<ScriptEmbedded />} />
                 <Route path="/test/nested-payloads" element={<NestedPayloads />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
